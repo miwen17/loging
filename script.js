@@ -23,6 +23,8 @@ const signUp = e => {
     else{
         alert("Ooopppssss... Duplicate found!!!\nYou have already signned up");
     }
+    localStorage.setItem('formData'.JSON.stringify(formData));
+    dispData();
     e.preventDefault();
 }
 

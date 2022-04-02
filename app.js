@@ -56,3 +56,9 @@ menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
 
 
+
+
+function dispData(){
+  let {fname, lname, email, pwd} = JSON.parse(localStorage.getItem('formData'));
+  var schedule = document.getElementsByClassName("main__btn");
+}
