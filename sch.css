@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.img1 {
+    background-image: url(https://wallpaperaccess.com/full/3566407.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h2 {
+    color: aqua;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-group{ margin: 20px 0px; }
+input{ height: 30px; width: 50%; padding: 5px; }
+button{ 
+    background: dodgerblue; 
+    color: #fff; 
+    padding: 10px; 
+    border: solid 1px rgb(0, 128, 255);
+    cursor: pointer;
+}
