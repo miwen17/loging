@@ -11,6 +11,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow: hidden;
 }
 
 h2 {
@@ -24,11 +25,40 @@ h2 {
 }
 
 .form-group{ margin: 20px 0px; }
-input{ height: 30px; width: 50%; padding: 5px; }
+input{ height: 30px; width: 450px; padding: 5px; text-align: center;}
 button{ 
     background: dodgerblue; 
     color: #fff; 
     padding: 10px; 
     border: solid 1px rgb(0, 128, 255);
     cursor: pointer;
+}
+
+main{
+    text-align: center;
+    margin: 100px;
+}
+
+@media screen and (max-width: 960px) {
+    .img1{
+        background-position: -315px;
+        
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .img1{
+        background-position: -320px;
+        
+    }
+
+}
+
+@media screen and (max-height:600px) {
+    .img1{
+        background-position: center;
+        
+    }
 }

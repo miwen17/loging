@@ -30,8 +30,8 @@
 }
 
 #navbar__logo {
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-color: #8ebdbb;
+  background-image: linear-gradient(to top, #3da042 0%, #1e9ec5 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -84,15 +84,12 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   color: #fff;
   transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-  color: #9518fc;
+  color: #000000;
   transition: all 0.3s ease;
 }
 
@@ -216,16 +213,16 @@
 }
 
 .hero__heading span {
-  background: #ee0979; /* fallback for old browsers */
+  background: #0987ee; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #ff6a00,
-    #ee0979
+    #33ff00,
+    #09eeee
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #ff6a00,
-    #ee0979
+    #00ff80,
+    #093eee
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -239,13 +236,13 @@
   background: #da22ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #9114ff,
-    #da22ff
+    #1512c7,
+    #1488ac
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #8f0eff,
-    #da22ff
+    #1251c7,
+    #7414ac
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -349,7 +346,7 @@
 .main__btn a {
   position: relative;
   z-index: 2;
-  color: #fff;
+  color: rgba(227, 235, 231, 0.753);
   text-decoration: none;
 }
 
@@ -360,13 +357,13 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff1ead;
+  background: #525252b9;
   transition: all 0.35s;
   border-radius: 4px;
 }
 
 .main__btn:hover {
-  color: #fff;
+  color: rgb(119, 119, 119);
 }
 
 .main__btn:hover:after {
@@ -386,7 +383,10 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  background-image: url(idea1.jpg);
+  background-position: -600px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .fa-layer-group,
@@ -701,5 +701,27 @@
     margin: 0;
     padding: 10px;
     width: 100%;
+  }
+}
+
+.main__btn{
+  background-image: url(https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2017/1/9/0/Original_SteveLarese_Denali_Alaska_TopoftheWorld_800_8053.jpg.rend.hgtvcom.966.644.suffix/1491593902909.jpeg);
+  background-position-y: 0px;
+  animation-name: move;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+@keyframes move{
+  0%{
+    background-position-y: 0%;
+    background-position-x: 0%;
+  }
+  50%{
+    background-position-y: 100%;
+    background-position-x: 100%;
+  }
+  100%{
+    background-position-y: 0%;
+    background-position-x: 0%;
   }
 }
