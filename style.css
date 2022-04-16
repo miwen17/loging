@@ -500,44 +500,6 @@
   grid-template-rows: 1fr;
 }
 
-.services__card {
-  margin: 10px;
-  height: 425px;
-  width: 300px;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-  transition: 0.3s ease-in;
-}
-
-.services__card:nth-child(2) {
-  background: #1fa2ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #a6ffcb,
-    #12d8fa,
-    #1fa2ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #a6ffcb,
-    #12d8fa,
-    #1fa2ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.services__card:nth-child(3) {
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-}
 
 .services__card h2 {
   text-align: center;
@@ -547,32 +509,6 @@
   text-align: center;
   margin-top: 24px;
   font-size: 20px;
-}
-
-.services__btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.services__card button {
-  color: #fff;
-  padding: 14px 24px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #131313;
-  font-size: 1rem;
-}
-
-.services__card button:hover {
-  cursor: pointer;
-}
-
-.services__card:hover {
-  transform: scale(1.075);
-  transition: 0.3s ease-in;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1300px) {
@@ -705,7 +641,7 @@
 }
 
 .main__btn{
-  background-image: url(https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2017/1/9/0/Original_SteveLarese_Denali_Alaska_TopoftheWorld_800_8053.jpg.rend.hgtvcom.966.644.suffix/1491593902909.jpeg);
+  background-image: url(button01.jpg);
   background-position-y: 0px;
   animation-name: move;
   animation-duration: 40s;
@@ -724,4 +660,110 @@
     background-position-y: 0%;
     background-position-x: 0%;
   }
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
 }
