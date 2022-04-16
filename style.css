@@ -292,7 +292,7 @@
 .main__content h1 {
   font-size: 2rem;
   background-color: #fe3b6f;
-  background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  background-image: linear-gradient(to top, #087bff 0%, #1aed79 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -307,13 +307,13 @@
   background: #ff8177; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #9114ff,
-    #da22ff
+    #143fff,
+    #6422ff
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #8f0eff,
-    #da22ff
+    #2414ff,
+    #22ff34
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -484,7 +484,7 @@
 
 .services h1 {
   background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  background-image: linear-gradient(to right, #3ea194 0%, #3c3ff7 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -667,6 +667,7 @@
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
+  transition: 1s;
 }
 
 .slides{
@@ -767,3 +768,57 @@
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background: #40D3DC;
 }
+
+@media screen and (max-width: 960px) {
+  .slider{
+    border-radius: 10%;
+    transition: 1s;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .slider{
+    border-radius: 20%; 
+    transition: 1s ease-in;
+  }
+  
+}
+
+.info , .info1 , .info2 , .info3{
+  margin: -150px;
+}
+
+.info h2{
+  color: rgb(255, 58, 202);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.info1 h2 {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.info2 h2{
+  color: rgb(31, 51, 94);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+} 
+.info3 h2{
+  color: rgb(151, 136, 47);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+} 
