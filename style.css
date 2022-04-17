@@ -31,7 +31,7 @@
 
 #navbar__logo {
   background-color: #8ebdbb;
-  background-image: linear-gradient(to top, #3da042 0%, #1e9ec5 100%);
+  background-image: linear-gradient(to top, #429e3e 10%, #0051e9 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -84,12 +84,24 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  color: #fff;
+  color:white;
+  background: white;
+  background: #0987ee; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #33ff00,
+    #09eeee
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #00ff80,
+    #093eee
+  ); 
   transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-  color: #000000;
+  color: mediumturquoise;
   transition: all 0.3s ease;
 }
 
@@ -330,9 +342,7 @@
 
 .main__btn {
   font-size: 1.8rem;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #fff;
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
@@ -398,6 +408,9 @@
   background: #ff512f;
   background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
   background: linear-gradient(to right, #dd2476, #ff512f);
+  background-image: url(logo.png);
+  background-position: center;
+  background-size: contain;
 }
 
 /* Mobile Responsive */
@@ -787,10 +800,11 @@
 
 .info , .info1 , .info2 , .info3{
   margin: -150px;
+  margin-top: -500px;
 }
 
 .info h2{
-  color: rgb(255, 58, 202);
+  color: rgb(0, 0, 0);
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 800;
@@ -807,7 +821,7 @@
   text-align: center;
 }
 .info2 h2{
-  color: rgb(31, 51, 94);
+  color: rgb(0, 0, 0);
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 800;
@@ -815,10 +829,14 @@
   text-align: center;
 } 
 .info3 h2{
-  color: rgb(151, 136, 47);
+  color: rgb(0, 0, 0);
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
   text-align: center;
 } 
+
+.main__btn{
+  color: white;
+}
