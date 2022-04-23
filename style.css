@@ -85,17 +85,17 @@
   outline: none;
   border-radius: 4px;
   color:white;
-  background: white;
-  background: #0987ee; /* fallback for old browsers */
+  background: rgb(1, 81, 255);
   background: -webkit-linear-gradient(
     to right,
-    #33ff00,
-    #09eeee
+    #6eeeff8a,
+    #2556f8af
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #00ff80,
-    #093eee
+    
+    #6eeeff8a,
+    #2556f8af
   ); 
   transition: all 0.3s ease;
 }
