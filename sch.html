@@ -39,75 +39,78 @@
           <!-- Services Section -->
         <div class="services" id="services">
           <h1>Most Famous</h1>
-           <!--image slider start-->
-    <div class="slider">
-      <div class="slides">
-        <!--radio buttons start-->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <!--radio buttons end-->
-        <!--slide images start-->
-        <div class="slide first">
-          <img class="img1" src="img1.jpg" alt="Palaces of Westminster">
-          <div class="info1">
-            <h2>  Palaces of Westminster</h2>
+          <div class="holder">
+          <div class="imgholder">
+            <img src="img0.jpg" alt="">
+            <div class="textholder">
+              <h2>
+                Korankei Gorge is famous nationwide for the beauty of its autumn foliage. The red maples burst into fire in the fall, setting the Tomoe River flowing through Asuke-cho aflame. There are said to be about 4,000 maples planted here.Until today there are some 11 varieties of maple thriving here, each with its own distinctive leaf shape and color, weaving a stunningly beautiful tapestry of color.
+              </h2>
+            </div>
+          </div>
             
+            <img src="img1.jpg" alt="">
+            <img src="img2.jpg" alt="">
+            <img src="img3.jpg" alt="">
           </div>
         </div>
-        <div class="slide">
-          <img  class="img2" src="img2.jpg" alt="">
-          <div class="info2">
-            <h2>  Burj Al Arab</h2>
-            
+      
+    
+        <!-- Footer Section -->
+        <div class="footer__container">
+          <div class="footer__links">
+            <div class="footer__link--wrapper">
+              <div class="footer__link--items">
+                <h2>About Us</h2>
+                <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+                <a href="/">Careers</a> <a href="/">Terms of Service</a>
+              </div>
+              <div class="footer__link--items">
+                <h2>Contact Us</h2>
+                <a href="/">Contact</a> <a href="/">Support</a>
+                <a href="/">Destinations</a>
+              </div>
+            </div>
+            <div class="footer__link--wrapper">
+              <div class="footer__link--items">
+                <h2>Videos</h2>
+                <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+                <a href="/">Agency</a>
+              </div>
+              <div class="footer__link--items">
+                <h2>Social Media</h2>
+                <a href="/">Instagram</a> <a href="/">Facebook</a>
+                <a href="/">Youtube</a> <a href="/">Twitter</a>
+              </div>
+            </div>
           </div>
+          <section class="social__media">
+            <div class="social__media--wrap">
+              <div class="footer__logo">
+                <a href="/" id="footer__logo">WorldView</a>
+              </div>
+              <p class="website__rights">© WorldView 2022. All rights reserved</p>
+              <div class="social__icons">
+                <a href="/" class="social__icon--link" target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="/" class="social__icon--link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="/" class="social__icon--link"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="/" class="social__icon--link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="/" class="social__icon--link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="slide">
-          <img  class="img3"  src="img3.jpg" alt="">
-          <div class="info">
-            <h2>  Eiffel Tower </h2>
-            
-          </div>
-        </div>
-        <div class="slide">
-          <img   class="img0" src="img0.jpg" alt="">
-          <div class="info">
-            <h2>  Korankei Gorge</h2>
-            
-          </div>
-        </div>
-        <!--slide images end-->
-        <!--automatic navigation start-->
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-        </div>
-        <!--automatic navigation end-->
-      </div>
-      <!--manual navigation start-->
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-      </div>
-      <!--manual navigation end-->
-    </div>
-    <!--image slider end-->
-
-    <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-      document.getElementById('radio' + counter).checked = true;
-      counter++;
-      if(counter > 4){
-        counter = 1;
-      }
-    }, 5000);
-    </script>
+    
 
 <script type="text/javascript" src="app.js"></script>
 </body>
