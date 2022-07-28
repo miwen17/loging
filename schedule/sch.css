@@ -370,7 +370,7 @@
 }
 
 .main__btn{
-  background-image: url(button01.jpg);
+  background-image: url(.jpg);
   background-position-y: 0px;
   animation-name: move;
   animation-duration: 40s;
